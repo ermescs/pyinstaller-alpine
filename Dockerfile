@@ -27,7 +27,6 @@ RUN git clone --depth 1 --single-branch --branch $PYINSTALLER_TAG https://github
     && pip install .. \
     && rm -Rf /tmp/pyinstaller
 
-VOLUME /src
 WORKDIR /src
 
 ADD ./bin /pyinstaller
