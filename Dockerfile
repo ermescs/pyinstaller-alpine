@@ -31,7 +31,7 @@ VOLUME /src
 WORKDIR /src
 
 ADD ./bin /pyinstaller
-RUN chmod a+x /pyinstaller/*
+RUN chmod a+rx /pyinstaller/*
 
 ENTRYPOINT ["/pyinstaller/pyinstaller.sh"]
 CMD ["pyinstaller"]
